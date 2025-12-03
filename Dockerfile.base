@@ -1,2 +1,7 @@
 FROM nginx:latest
+
+# Replace default Nginx HTML with your custom index.html
 COPY index.html /usr/share/nginx/html/index.html
+
+# Expose port 80 (optional because nginx image already exposes it)
+EXPOSE 80
